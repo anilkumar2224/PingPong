@@ -4,11 +4,7 @@
      box-sizing: border-box; 
      -webkit-tap-highlight-color: transparent;
     }
-
-    .can{
-        width: 100%;
-        text-align: center;
-    }
+ 
 #canva{
     
     background-color:black;
@@ -18,5 +14,264 @@
   right: 0;
   bottom: 0;
   margin: auto; 
+  display:none;
 
+
+
+}
+:root {
+  --background: #E5FFB3;
+  --background-accent: #DBF8A3;
+  --background-accent-2: #BDE66E;
+  --light: #92DE34;
+  --dark: #69BC22;
+  --text: #025600;
+}
+
+
+#card{
+  margin: 0 auto 0 auto;
+  left: 0;
+
+}
+
+#num{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace; 
+  
+  margin-right: 300px;
+  margin-top: -22px;
+ 
+}
+#top,#n{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: monospace; 
+}
+
+
+#s{
+  display: block;
+  width: 100vw;
+  margin: auto ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+#ss{
+  display: block;
+  width: 100px;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  right: 0;
+  top: 1vh;
+}
+#t{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace; 
+  margin-top: 120px;
+margin-left: 300px;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+.hide{
+    display: none;
+}
+#name{
+  width: 280px;
+  margin: auto ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 220px;
+  bottom: 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: monospace; 
+}
+#start{
+  margin: auto ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#score{
+width: 100px;
+height: 20px;
+  margin: auto ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -150px;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: monospace; 
+}
+#start:hover {
+  background-image: linear-gradient(
+    142deg,
+    transparent 10%,
+    var(--dark) 10% 20%,
+    transparent 20% 30%,
+    var(--dark) 30% 40%,
+    transparent 40% 50%,
+    var(--dark) 50% 60%,
+    transparent 60% 70%,
+    var(--dark) 70% 80%,
+    transparent 80% 90%,
+    var(--dark) 90% 100%
+  );
+  animation: backgroundd 3s linear infinite;
+}
+
+@keyframes backgroundd {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+
+#canv,#down,#up{
+  display: none;
+}
+#down,#up{
+  background-color: skyblue;
+  box-shadow: 0 0 0 7px orange inset;
+
+}
+ @media(max-width:420px){
+   #canva{
+     display: none;
+   }
+   #canv{
+     background-color: black;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto; 
+     display:none;
+   }
+   #down{
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    width: 80px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace; 
+    
+  }
+  #up{
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    width: 80px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace; 
+  }
+  #num{
+    margin-right: 60px;
+    margin-top: 90px;
+    float: right;
+  }
+  #t{
+    margin-left: 60px;
+    margin-top: 90px;
+    float: left;
+  }
+ }
+ @media(max-height:420px){
+  #canva{
+    display: none;
+  }
+  #canv{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+    display:none;
+  }
+  #down{
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    width: 80px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace; 
+  }
+  #up{
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    width: 80px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace; 
+  }
+  #num{
+    margin-right: 60px;
+    margin-top: 60px;
+    float: right;
+  }
+  #t{
+    margin-left: 60px;
+    float: left;
+    margin-top: 60px;
+  }
+ 
+  #score{
+    top: -150px;
+  }
+ 
 }
